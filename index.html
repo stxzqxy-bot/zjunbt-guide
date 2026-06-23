@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="浙大宁波理工学院学生情报站：学生共建资料站">
+  <title>浙大宁波理工学院学生情报站</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="extras.css">
+</head>
+<body>
+  <div class="ambient ambient-a"></div><div class="ambient ambient-b"></div>
+  <header class="nav shell">
+    <nav aria-label="主导航">
+      <a href="#contact">学长微信</a><a href="#arrival">到校地图</a><a href="#dorms">宿舍图鉴</a><a href="#policies">政策资料</a><a href="#faq">新生问答</a>
+    </nav>
+    <button class="ask-btn" data-open-ask>提个问题 <span>＋</span></button>
+  </header>
+
+  <main id="top">
+    <section class="hero shell">
+      <div class="eyebrow"><i></i> ZJUNBT · 学生共建资料站</div>
+      <h1>从录取到毕业，<br><em>少走一点弯路。</em></h1>
+      <p>想你所想</p>
+      <label class="hero-search">
+        <span>⌕</span><input id="globalSearch" type="search" placeholder="搜宿舍、转专业、门禁、选课…" autocomplete="off">
+        <kbd>⌘ K</kbd>
+      </label>
+      <div class="quick-links"><span>大家常搜</span><button data-query="宿舍">宿舍条件</button><button data-query="转专业">转专业</button><button data-query="选课">选课</button><button data-query="军训">军训</button></div>
+      <div class="hero-stats"><div><strong>7</strong><span>类宿舍档案</span></div><div><strong>100</strong><span>个高频问题</span></div><div><strong>3</strong><span>级信息标识</span></div></div>
+    </section>
+
+    <section id="contact" class="section shell contact-section">
+      <div class="contact-card">
+        <div class="contact-copy">
+          <span class="kicker">SENIOR CONTACT</span>
+          <h2>有不懂的，直接问学长</h2>
+          <p>扫码添加学长微信，可拉新生群。网站出现bug或一时搜不到的问题以及网站内容一些细致具体的事宜不懂的都可以询问。热情学长在线解答</p>
+          <div class="notice-pill">学长微信 · 江浸月</div>
+        </div>
+        <figure class="qr-card">
+          <img src="wechat-qr.jpg" alt="学长微信二维码">
+          <figcaption>扫码添加我为好友</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="arrival" class="section shell arrival-section">
+      <div class="section-head"><div><span class="kicker">ARRIVAL GUIDE</span><h2>沉浸式到校地图</h2><p>校园示意图不是测绘图；交通方案按常用路线整理，实时班次、出口与迎新交通管制请以地图 App 和学校通知为准。</p></div></div>
+      <div class="arrival-layout">
+        <div class="campus-map" aria-label="校园示意地图">
+          <div class="map-badge">校园示意图</div>
+          <div class="map-road north">钱湖南路 / 校门方向</div>
+          <div class="map-zone gate">校门<br><small>报到入口</small></div>
+          <div class="map-zone library">图书馆<br><small>自习·借阅</small></div>
+          <div class="map-zone teach">教学区<br><small>上课主线</small></div>
+          <div class="map-zone canteen">食堂区<br><small>吃饭集合点</small></div>
+          <div class="map-zone dorm">宿舍片区<br><small>一期 / 二期 / 三期 / 四期</small></div>
+          <div class="map-zone sports">运动场<br><small>军训·体育</small></div>
+          <div class="map-path path-a"></div><div class="map-path path-b"></div>
+          <div class="metro-tip">地铁 4 号线<br>南高教园区站方向</div>
+        </div>
+        <figure class="campus-real-map">
+          <img src="assets/campus-map-2022.jpg" alt="浙大宁波理工学院手绘地图 2022 夏 8 月版">
+          <figcaption>浙大宁波理工学院手绘地图（2022 夏 8 月版），用于快速认识校门、宿舍、教学楼、图书馆与运动场大致方位。</figcaption>
+        </figure>
+        <div class="route-stack">
+          <article class="route-card"><span>高铁 / 火车</span><h3>优先买到「宁波站」</h3><p>到达宁波站后，站内换乘宁波轨道交通 4 号线，往东钱湖方向，到「南高教园区站」下，出地铁站即达学校。</p></article>
+          <article class="route-card"><span>飞机</span><h3>宁波栎社国际机场 → 学校</h3><p>机场乘地铁 2 号线到「宁波火车站」，换乘 4 号线往东钱湖方向，到「南高教园区站」下。行李多建议机场直接打车。</p></article>
+          <article class="route-card"><span>地铁</span><h3>核心站点：南高教园区站</h3><p>无论从市区、火车站还是机场转来，最终都可以把目的地设为「南高教园区站 / 浙大宁波理工学院」。出站后按地图步行导航。</p></article>
+          <article class="route-card"><span>驾车 / 网约车</span><h3>导航到钱湖南路 1 号</h3><p>目的地输入「浙大宁波理工学院」或「浙江省宁波市鄞州区钱湖南路 1 号」。开学报到日可能交通管制，家长车辆是否入校以当年通知为准。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="dorms" class="section shell">
+      <div class="section-head"><div><span class="kicker">DORM ATLAS</span><h2>先看看未来的家</h2><p>按宿舍片区与房型浏览。照片与配置结合在校生经验整理。</p></div><div class="legend"><span><i class="dot verified"></i>已整理</span><span><i class="dot pending"></i>持续更新</span></div></div>
+      <div class="dorm-grid" id="dormGrid"></div>
+    </section>
+
+    <section id="policies" class="section policy-wrap policy-hub">
+      <div class="shell">
+        <div class="policy-hub-board">
+          <div class="policy-docs">
+          <div class="section-head compact"><div><span class="kicker">OFFICIAL FILES</span><h2>官方资料包</h2><p>预览 PDF 用来快速浏览；若学校原附件是 Word、Excel、Zip 或 PDF，会以官方附件入口保留。需要验证码的附件请按学校页面提示下载。</p></div></div>
+          <div class="docs-layout">
+            <div class="docs-list" id="docsList"></div>
+            <aside class="docs-viewer">
+              <div class="viewer-head"><span id="viewerTitle">资料预览</span><a id="viewerDownload" class="outline-btn" href="#" download>下载预览 PDF</a></div>
+              <iframe id="docViewer" title="PDF 资料预览"></iframe>
+            </aside>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section shell">
+      <div class="section-head"><div><span class="kicker">NEW STUDENT FAQ</span><h2>新生最常问的事</h2><p>答案会随学年更新；经验类内容请结合自身学院判断。</p></div><button class="outline-btn" data-open-ask>没有我的问题？</button></div>
+      <div class="filter-row" id="faqFilters"></div>
+      <div class="faq-layout"><div class="faq-list" id="faqList"></div><aside class="trust-card"><span>信息怎么看？</span><h3>先看标识，再做决定</h3><div><b class="tag official">官方信息</b><p>来自学校官网或公开文件，可点击来源核对。</p></div><div><b class="tag experience">学生经验</b><p>来自在校生常见反馈，可能因楼栋、学院而不同。</p></div><div><b class="tag pending">信息提示</b><p>适合快速参考，具体执行以当年通知和现场安排为准。</p></div></aside></div>
+    </section>
+
+    <section id="life" class="section shell life-section">
+      <div class="life-copy"><span class="kicker">CAMPUS LIFE</span><h2>校园之外，<br>也是大学生活。</h2><p>从奶茶、外卖到周末逛街，把生活半径慢慢补全。</p><button class="ask-btn" data-query="周边">探索周边攻略 <span>↗</span></button></div>
+      <div class="life-cards"><article class="life-card blue"><span>01</span><h3>吃喝地图</h3><p>食堂 · 奶茶 · 外卖</p></article><article class="life-card orange"><span>02</span><h3>周末去处</h3><p>商圈 · 娱乐 · 城市交通</p></article><article class="life-card violet"><span>03</span><h3>成长清单</h3><p>社团 · 兼职 · 考证</p></article></div>
+    </section>
+  </main>
+
+  <footer class="shell"><p>浙大宁波理工学院学生情报站 · 学生共建 · 重要事项请以当年学校通知为准</p><span>Made for ZJUNBT students</span></footer>
+
+  <div class="image-lightbox" id="imageLightbox" aria-hidden="true"><button class="lightbox-close" type="button" aria-label="关闭图片预览">×</button><img alt=""><p></p></div>
+  <dialog id="askDialog"><form method="dialog" id="askForm"><button class="close" value="cancel" aria-label="关闭">×</button><span class="kicker">COMMUNITY Q&A</span><h2>把问题留在这里</h2><p>问题会保存在当前浏览器，也可以添加学长微信进入新生群继续交流。</p><label>你的问题<textarea id="askText" required maxlength="300" placeholder="例如：四期 3 号楼的洗衣机多吗？"></textarea></label><label>问题分类<select id="askCategory"><option>宿舍</option><option>学习</option><option>政策</option><option>生活</option><option>社团</option></select></label><label class="anon"><input type="checkbox" checked> 匿名发布</label><button class="submit" value="default">提交问题</button></form></dialog>
+  <div id="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>
