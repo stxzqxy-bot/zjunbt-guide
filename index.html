@@ -13,7 +13,7 @@
   <div class="ambient ambient-a"></div><div class="ambient ambient-b"></div>
   <header class="nav shell">
     <nav aria-label="主导航">
-      <a href="#contact">学长微信</a><a href="#arrival">到校地图</a><a href="#dorms">宿舍图鉴</a><a href="#policies">政策资料</a><a href="#faq">新生问答</a>
+      <a href="#admission">志愿查询</a><a href="#contact">学长微信</a><a href="#arrival">到校地图</a><a href="#dorms">宿舍图鉴</a><a href="#policies">政策资料</a><a href="#faq">新生问答</a>
     </nav>
     <button class="ask-btn" data-open-ask>提个问题 <span>＋</span></button>
   </header>
@@ -23,12 +23,43 @@
       <div class="eyebrow"><i></i> ZJUNBT · 学生共建资料站</div>
       <h1>从录取到毕业，<br><em>少走一点弯路。</em></h1>
       <p class="official-site">学校官方网站：<a href="https://www.nbt.edu.cn" target="_blank" rel="noopener">www.nbt.edu.cn</a></p>
-      <label class="hero-search">
-        <span>⌕</span><input id="globalSearch" type="search" placeholder="搜宿舍、转专业、门禁、选课…" autocomplete="off">
-        <kbd>⌘ K</kbd>
-      </label>
+      <div class="hero-search">
+        <span>⌕</span><input id="globalSearch" type="search" aria-label="站内搜索" placeholder="搜宿舍、转专业、门禁、选课…" autocomplete="off">
+        <button id="heroSearchGo" type="button">搜索</button>
+      </div>
       <div class="quick-links"><span>大家常搜</span><button data-query="宿舍">宿舍条件</button><button data-query="转专业">转专业</button><button data-query="选课">选课</button><button data-query="军训">军训</button></div>
-      <div class="hero-stats"><div><strong>7</strong><span>类宿舍档案</span></div><div><strong>100</strong><span>个高频问题</span></div><div><strong>3</strong><span>级信息标识</span></div></div>
+      <div class="hero-stats"><div><strong>7</strong><span>类宿舍档案</span></div><div><strong>100</strong><span>个高频问题</span></div><div><strong>6</strong><span>级信息标识</span></div></div>
+    </section>
+
+    <section id="admission" class="section shell admission-section">
+      <div class="admission-card">
+        <div class="admission-copy">
+          <span class="kicker">GAOKAO ADMISSION</span>
+          <h2>高考志愿填录参考</h2>
+          <p>按省份、物理方向 / 历史方向 / 综合改革和分数快速判断：能不能冲浙大宁波理工学院、哪些专业更稳。数据来自学校招生网历年录取情况，结果仅作志愿参考。</p>
+          <div class="admission-source">
+            <a href="https://zsw.nbt.edu.cn/info/1034/3442.htm" target="_blank" rel="noopener">2025 浙江录取情况</a>
+            <a href="https://zsw.nbt.edu.cn/info/1034/3452.htm" target="_blank" rel="noopener">2025 外省录取情况</a>
+          </div>
+        </div>
+        <form class="admission-form" id="admissionForm">
+          <label>生源省份
+            <select id="admissionProvince"></select>
+          </label>
+          <label>选考方向
+            <select id="admissionTrack"></select>
+          </label>
+          <label>高考分数
+            <input id="admissionScore" type="number" min="0" max="750" placeholder="输入你的分数" required>
+          </label>
+          <button type="submit">开始评估</button>
+        </form>
+        <div class="admission-result" id="admissionResult">
+          <span class="result-chip">先输入分数</span>
+          <h3>这里会给出录取概率和专业建议</h3>
+          <p>如果你所在省份暂未录入专业明细，系统会先按学校最低投档线判断，再提示你核对当年招生计划与选科要求。</p>
+        </div>
+      </div>
     </section>
 
     <section id="contact" class="section shell contact-section">
